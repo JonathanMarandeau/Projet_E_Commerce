@@ -1,5 +1,5 @@
 body {
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Denk One', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -23,6 +23,12 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+.card-img-top {
+  height: 444.25px;
+  width: 444.25px;
+}
+
 .Nous {
   margin: 70px;
 }
