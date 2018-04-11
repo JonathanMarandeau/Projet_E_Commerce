@@ -15,3 +15,9 @@ $('#navPuma').click(function() {
   $('.Adidas').hide();
   $('.Puma').show();
 })
+
+$('#navAll').click(function() {
+  $('.Nike').show();
+  $('.Adidas').show();
+  $('.Puma').show();
+})
