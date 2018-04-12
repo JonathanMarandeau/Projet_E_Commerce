@@ -1,4 +1,3 @@
-
 $(function(){ // DEBUT DE LA FONCTION DOCUMENT READY
 
 $('#navAdidas').click(function() {
