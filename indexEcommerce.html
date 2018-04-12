@@ -37,7 +37,7 @@
             <a class="nav-link" href="#">Qui Sommes Nous ?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i></a>
+            <a id="cart_btn" class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-basket"></i></a>
           </li>
         </ul>
       </div>
@@ -54,6 +54,75 @@
     </div><!-- Fin de la div class nous -->
 
   <!--Anousone-->
+  <!--
+  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+    Ajouter au panier
+  </button>
+  -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Mon Panier</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form> <!-- début du formulaire-->
+          <!-- Table responsive avec scroll horizontal-->
+          <table class="table table-responsive sm" id="tblGrid">
+            <thead class="thead-dark" id="tblHead">
+              <tr>
+                <th class="text-left align-middle">Référence</th>
+                <th class="text-right align-middle">Quantité</th>
+                <th class="text-right align-middle">Prix</th>
+                <th class="text-right align-middle">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="choice" id="cart_shoes1">
+                <td class="text-left align-middle" id="ref_shoes1"></td>
+                <td class="text-right align-middle"><i class="far fa-trash-alt"></i> <input id="qty_shoes1" type="number" class="qte" min="0" max="99" value="0" /></td>
+                <td class="text-right align-middle" id="price_shoes1"></td>
+                <td class="text-right align-middle" id="total_shoes1"></td>
+              </tr>
+              <tr class="choice" id="cart_shoes2">
+                <td class="text-left align-middle" id="ref_shoes2"></td>
+                <td class="text-right align-middle"><i class="far fa-trash-alt"></i> <input id="qty_shoes2" type="number" class="qte" min="0" max="99" value="0" /></td>
+                <td class="text-right align-middle" id="price_shoes2"></td>
+                <td class="text-right align-middle" id="total_shoes2"></td>
+              </tr>
+              <tr class="choice" id="cart_shoes3">
+                <td class="text-left align-middle" id="ref_shoes3"></td>
+                <td class="text-right align-middle"><i class="far fa-trash-alt"></i> <input id="qty_shoes3" type="number" class="qte" min="0" max="99" value="0" /></td>
+                <td class="text-right align-middle" id="price_shoes3"></td>
+                <td class="text-right align-middle" id="total_shoes3"></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-right align-middle"><button class="btn btn-secondary btn-sm" id="btn_update">Mise à jour</button></td>
+                <td class="text-right align-middle">Total du panier</td>
+                <td class="text-right align-middle" id="total_all"></td>
+              </tr>
+            </tbody>
+          </table> <!-- fin de table -->
+        </form> <!-- fin du formulaire -->
+
+        </div> <!-- Fin du modal body-->
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Achat</button>
+          <button class="btn btn-info" data-dismiss="modal" id="btn_continue">Continuer mes achats</button>
+        </div>
+
+      </div> <!-- fin du modal-content -->
+    </div> <!-- fin du modal-dialog -->
+  </div> <!-- fin du modal-->
 
   <!--Thibault-->
   <div class="row Nike">
@@ -62,6 +131,7 @@
         <img class="card-img-top img-fluid" src="images/jordan1flyknitmen.jpg" alt="Nike Air Jordan 1 Retro High Flyknit Homme">
         <div class="card-body">
           <h4 class="card-title">Nike Air Jordan 1 Retro High Flyknit Homme</h4>
+          <button id="btn_shoes1" name="btn_shoes1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
         </div>
       </div>
     </div>
@@ -70,6 +140,7 @@
         <img class="card-img-top img-fluid" src="images/jordan1highzip.jpg" alt="Nike Air Jordan 1 High Zip Femme">
         <div class="card-body">
           <h4 class="card-title">Nike Air Jordan 1 High Zip Femme</h4>
+          <button id="btn_shoes2" name="btn_shoes1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
         </div>
       </div>
     </div>
@@ -78,6 +149,7 @@
         <img class="card-img-top img-fluid" src="images/jordanfirstclass.jpg" alt="Nike Air Jordan First Class Garçon">
         <div class="card-body">
           <h4 class="card-title">Nike Air Jordan First Class Garçon</h4>
+          <button id="btn_shoes3" name="btn_shoes1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
         </div>
       </div>
     </div>
@@ -157,6 +229,7 @@
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js">
+  </script>
 </body>
 </html>
