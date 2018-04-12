@@ -83,15 +83,15 @@ $('#btn_shoes3').click(function(){ // bouton shoes3
 // BOUTON MAJ ----------------------------------------------------------
   $('#btn_update').click(function(){
   // MAJ  de toutes les variables quantité + mega somme
-  qty_shoes1 = $('#qty_shoes1').val();
-  qty_shoes2 = $('#qty_shoes2').val();
-  qty_shoes3 = $('#qty_shoes3').val();
-  total_all = (qty_shoes1*price_shoes1) + (qty_shoes2*price_shoes2) + (qty_shoes3*price_shoes3);
-  // MAJ de tous les totaux shoes + mega somme
-  $('#total_shoes1').text((qty_shoes1 * price_shoes1).toFixed(2)+'€');
-  $('#total_shoes2').text((qty_shoes2 * price_shoes2).toFixed(2)+'€');
-  $('#total_shoes3').text((qty_shoes3 * price_shoes3).toFixed(2)+'€');
-  $('#total_all').text(total_all.toFixed(2)+'€');
+      qty_shoes1 = $('#qty_shoes1').val();
+      qty_shoes2 = $('#qty_shoes2').val();
+      qty_shoes3 = $('#qty_shoes3').val();
+      total_all = (qty_shoes1*price_shoes1) + (qty_shoes2*price_shoes2) + (qty_shoes3*price_shoes3);
+      // MAJ de tous les totaux shoes + mega somme
+      $('#total_shoes1').text((qty_shoes1 * price_shoes1).toFixed(2)+'€');
+      $('#total_shoes2').text((qty_shoes2 * price_shoes2).toFixed(2)+'€');
+      $('#total_shoes3').text((qty_shoes3 * price_shoes3).toFixed(2)+'€');
+      $('#total_all').text(total_all.toFixed(2)+'€');
   }); // fin de la fonction click
   // BOUTON POURSUIVRE ACHAT ------------------------------------------------------
   $('#btn_continue').click(function(){
