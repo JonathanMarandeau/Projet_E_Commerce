@@ -54,13 +54,10 @@
     </div><!-- Fin de la div class nous -->
 
   <!--Anousone-->
-  <!-- BOUTON A AJOUTER
-      <button id="btn_shoes1" name="btn_shoes1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
-  -->
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <!-- Modal Header -->
@@ -71,9 +68,12 @@
 
         <!-- Modal body -->
         <div class="modal-body">
+          <div class="container"><!-- début du container -->
+          <div class="row"><!-- début du row -->
+          <div class="col align-self-end"><!-- début du col -->
           <form> <!-- début du formulaire-->
           <!-- Table responsive avec scroll horizontal-->
-          <table class="table table-responsive sm" id="tblGrid">
+          <table class="table table-responsive" id="tblGrid">
             <thead class="thead-dark" id="tblHead">
               <tr>
                 <th class="text-left align-middle">Référence</th>
@@ -83,34 +83,39 @@
               </tr>
             </thead>
             <tbody>
+              <!-- rajouter ici les shoes -->
               <tr class="choice" id="cart_shoes1">
                 <td class="text-left align-middle" id="ref_shoes1"></td>
-                <td class="text-right align-middle"><i class="far fa-trash-alt"></i> <input id="qty_shoes1" type="number" class="qte" min="0" max="99" value="0" /></td>
+                <td class="text-right align-middle"><div id="trash_shoes1" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes1" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes1"></td>
                 <td class="text-right align-middle" id="total_shoes1"></td>
               </tr>
               <tr class="choice" id="cart_shoes2">
                 <td class="text-left align-middle" id="ref_shoes2"></td>
-                <td class="text-right align-middle"><i class="far fa-trash-alt"></i> <input id="qty_shoes2" type="number" class="qte" min="0" max="99" value="0" /></td>
+                <td class="text-right align-middle"><div id="trash_shoes2" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes2" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes2"></td>
                 <td class="text-right align-middle" id="total_shoes2"></td>
               </tr>
               <tr class="choice" id="cart_shoes3">
                 <td class="text-left align-middle" id="ref_shoes3"></td>
-                <td class="text-right align-middle"><i class="far fa-trash-alt"></i> <input id="qty_shoes3" type="number" class="qte" min="0" max="99" value="0" /></td>
+                <td class="text-right align-middle"><div id="trash_shoes3" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes3" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes3"></td>
                 <td class="text-right align-middle" id="total_shoes3"></td>
               </tr>
+              <!-- fin pour rajouter ici les shoes -->
               <tr>
-                <td colspan="2" class="text-right align-middle"><input type="button" class="btn btn-secondary btn-sm" id="btn_update" value="Mise à jour" /></td>
+                <td class="text-right align-middle" id="update_message"></td>
+                <td class="text-right align-middle"><input type="button" class="btn btn-secondary btn-sm" id="btn_update" value="Mise à jour" /></td>
                 <td class="text-right align-middle">Total du panier</td>
                 <td class="text-right align-middle" id="total_all"></td>
               </tr>
             </tbody>
           </table> <!-- fin de table -->
         </form> <!-- fin du formulaire -->
-
-        </div> <!-- Fin du modal body-->
+        </div><!--Fin du col -->
+        </div><!--Fin du row -->
+        </div> <!-- Fin du container fluid -->
+        </div> <!-- Fin du modal body -->
 
         <!-- Modal footer -->
         <div class="modal-footer">

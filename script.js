@@ -1,5 +1,7 @@
 $(function(){ // DEBUT DE LA FONCTION DOCUMENT READY
 
+/* -----------------------FONCTION CATEGORIE -------------------*/
+
 $('#navAdidas').click(function() {
   $('.Nike').hide();
   $('.Puma').hide();
@@ -34,17 +36,21 @@ $('#navAll').click(function(){
 var ref_shoes1 = 'Super chaussure Nike top moumoute'
 var ref_shoes2 = 'Super chaussure Puma top confortable'
 var ref_shoes3 = 'Super chaussure Adidas top top génialissime'
+
 // VAR DES QUANTITES----------------------------------
 var qty_shoes1 = 0;
 var qty_shoes2 = 0;
 var qty_shoes3 = 0;
+
 // VAR DES PRIX UNITAIRES ---------------------------------
 var price_shoes1 = 75;
 var price_shoes2 = 75;
 var price_shoes3 = 100;
+
 // VAR MEGA SOMME----------------------------------------------------
 var total_all = 0
 console.log('somme = '+total_all);
+
 // BOUTONS DES IMAGES ------------------------------------------------
 $('#btn_shoes1').click(function(){ // bouton shoes1
   qty_shoes1++;
@@ -80,6 +86,8 @@ $('#btn_shoes3').click(function(){ // bouton shoes3
 });
 // BOUTON MAJ ----------------------------------------------------------
   $('#btn_update').click(function(){
+  // RAZ du message d'alerte du panier
+    $('#update_message').text('');
   // MAJ  de toutes les variables quantité + mega somme
       qty_shoes1 = $('#qty_shoes1').val();
       qty_shoes2 = $('#qty_shoes2').val();
@@ -91,6 +99,7 @@ $('#btn_shoes3').click(function(){ // bouton shoes3
       $('#total_shoes3').text((qty_shoes3 * price_shoes3).toFixed(2)+'€');
       $('#total_all').text(total_all.toFixed(2)+'€');
   }); // fin de la fonction click
+
   // BOUTON POURSUIVRE ACHAT ------------------------------------------------------
   $('#btn_continue').click(function(){
   // Pour shoes 1
@@ -112,5 +121,28 @@ $('#btn_shoes3').click(function(){ // bouton shoes3
   $('#cart_shoes3').show();
   }
   }); // fin de la fonction click
+
+  // UPDATE MESSAGE -------------------------------------- //
+  $('.qty').click(function(){
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+
+  // BOUTONS TRASH ---------------------------------------- //
+  $('#trash_shoes1').click(function(){
+    $('#qty_shoes1').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes2').click(function(){
+    $('#qty_shoes2').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes3').click(function(){
+    $('#qty_shoes3').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+
+
+
+
 
 }); // FIN DE LA FONCTION DOCUMENT READY
