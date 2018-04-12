@@ -62,3 +62,7 @@ body {
 .trash{
   display: inline;
 }
+
+.badge {
+  background-color: grey;
+}
