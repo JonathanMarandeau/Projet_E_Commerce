@@ -3,7 +3,11 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+/*css Collapse*/
+.detail{
+  font-style: italic;
+  font-size: 0.9em;
+}
 .brandText {
   font-family: 'Black Ops One', cursive;
 }
