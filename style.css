@@ -1,7 +1,11 @@
 body {
-  font-family: 'Denk One', sans-serif;
+  font-family: 'Pavanam', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.brandText {
+  font-family: 'Black Ops One', cursive;
 }
 
 /*CARDS STYLING*/
@@ -25,8 +29,8 @@ body {
 }
 
 .card-img-top {
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: auto;
 }
 
 .Nous {
