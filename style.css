@@ -37,3 +37,15 @@ body {
   width: 40px;
   padding-bottom: 25px;
 }
+
+/*--------------- Modal--------------- */
+
+.table{
+  font-size: 0.72em;
+}
+.qte{
+  width: 4em;
+}
+.choice{
+  display: none;
+}
