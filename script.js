@@ -18,3 +18,10 @@ $('#navPuma').click(function() {
   $('.Puma').show();
   $('#weAre').hide();
 })
+
+$('#navAll').click(function(){
+  $('.Nike').show();
+  $('.Adidas').show();
+  $('.Puma').show();
+  $('#weAre').show();
+})
