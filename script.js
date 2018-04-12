@@ -371,6 +371,42 @@ $('#btn_shoes12').click(function(){ // bouton shoes12
     $('#qty_shoes3').val(0);
     $('#update_message').text('Attention le panier n\'est pas à jour');
   });
+  $('#trash_shoes4').click(function(){
+    $('#qty_shoes4').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes5').click(function(){
+    $('#qty_shoes5').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes6').click(function(){
+    $('#qty_shoes6').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes7').click(function(){
+    $('#qty_shoes7').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes8').click(function(){
+    $('#qty_shoes8').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes9').click(function(){
+    $('#qty_shoes9').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes10').click(function(){
+    $('#qty_shoes10').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes11').click(function(){
+    $('#qty_shoes11').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
+  $('#trash_shoes12').click(function(){
+    $('#qty_shoes12').val(0);
+    $('#update_message').text('Attention le panier n\'est pas à jour');
+  });
 
 
 
