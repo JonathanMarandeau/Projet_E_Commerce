@@ -7,7 +7,6 @@ $('#navAdidas').click(function() {
   $('.Puma').hide();
   $('.Adidas').show();
   $('#weAre').hide();
-  $('.Adidas').css('margin-top', '100px');
 })
 
 $('#navNike').click(function() {
@@ -15,7 +14,6 @@ $('#navNike').click(function() {
   $('.Puma').hide();
   $('.Nike').show();
   $('#weAre').hide();
-  $('.Nike').css('margin-top', '100px');
 })
 
 $('#navPuma').click(function() {
@@ -23,7 +21,6 @@ $('#navPuma').click(function() {
   $('.Adidas').hide();
   $('.Puma').show();
   $('#weAre').hide();
-  $('.Puma').css('margin-top', '100px');
 })
 
 $('#navAll').click(function(){

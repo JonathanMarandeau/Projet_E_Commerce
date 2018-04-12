@@ -2,6 +2,7 @@ body {
   font-family: 'Pavanam', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
+  background-color: blue;
 }
 /*css Collapse*/
 .detail{
@@ -37,9 +38,15 @@ body {
   width: auto;
 }
 
-.Nous {
-  margin: 70px;
+.nous {
+  background-color: pink;
+  padding-top: 100px;
 }
+.boutique {
+  background-color: purple;
+  padding-top: 100px;
+}
+
 /*Icon a coté de ShoesAddicted */
 #ShoesAddictedIcon {
   width: 40px;
