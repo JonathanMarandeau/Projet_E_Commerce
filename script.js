@@ -1,5 +1,3 @@
-
-
 $(function(){ // DEBUT DE LA FONCTION DOCUMENT READY
 
 $('#navAdidas').click(function() {
@@ -9,20 +7,20 @@ $('#navAdidas').click(function() {
   $('#weAre').hide();
 })
 
-  $('#navNike').click(function() {
-    $('.Adidas').hide();
-    $('.Puma').hide();
-    $('.Nike').show();
-    $('#weAre').hide();
-  })
+$('#navNike').click(function() {
+  $('.Adidas').hide();
+  $('.Puma').hide();
+  $('.Nike').show();
+  $('#weAre').hide();
+})
 
-  $('#navPuma').click(function() {
-    $('.Nike').hide();
-    $('.Adidas').hide();
-    $('.Puma').show();
-    $('#weAre').hide();
-  })
-=======
+$('#navPuma').click(function() {
+  $('.Nike').hide();
+  $('.Adidas').hide();
+  $('.Puma').show();
+  $('#weAre').hide();
+})
+
 $('#navAll').click(function(){
   $('.Nike').show();
   $('.Adidas').show();
