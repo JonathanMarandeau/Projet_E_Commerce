@@ -44,12 +44,21 @@ body {
 
 /*--------------- Modal--------------- */
 
-.table{
-  font-size: 0.72em;
+#tblGrid{
+  font-size: 0.8em;
+  margin: auto;
 }
-.qte{
+.qty{
   width: 4em;
 }
 .choice{
   display: none;
+}
+
+#update_message{
+  color : orange;
+}
+
+.trash{
+  display: inline;
 }
