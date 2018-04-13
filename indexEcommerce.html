@@ -36,11 +36,14 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Qui Sommes Nous ?</a>
+          <a class="nav-link" href="#">Qui sommes nous ?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nous contacter</a>
         </li>
       </ul>
       <span class="navbar-text">
-        Le panier contient des éléments
+        Le panier contient <span id="qty_cart">0</span> élément(s)
       </span>
       <a id="cart_btn" class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-basket"></i></a><!-- Panier ouvrant le modal -->
     </div>
@@ -80,10 +83,11 @@
           <div class="col align-self-end"><!-- début du div col -->
           <form> <!-- début du formulaire-->
           <!-- Table responsive avec scroll horizontal en mode portable-->
-          <table class="table" id="tblGrid">
+          <table class="table" id="tblGrid"> <!-- class à modifier lors du media Query -->
             <thead class="thead-dark" id="tblHead">
               <tr>
                 <th class="text-left align-middle">Référence</th>
+                <th class="text-left align-middle">Désignation</th>
                 <th class="text-right align-middle">Quantité</th>
                 <th class="text-right align-middle">Prix</th>
                 <th class="text-right align-middle">Total</th>
@@ -93,72 +97,84 @@
               <!-- rajouter ici les shoes -->
               <tr class="choice" id="cart_shoes1">
                 <td class="text-left align-middle" id="ref_shoes1"></td>
+                <td class="text-left align-middle" id="dg_shoes1"></td>
                 <td class="text-right align-middle"><div id="trash_shoes1" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes1" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes1"></td>
                 <td class="text-right align-middle" id="total_shoes1"></td>
               </tr>
               <tr class="choice" id="cart_shoes2">
                 <td class="text-left align-middle" id="ref_shoes2"></td>
+                <td class="text-left align-middle" id="dg_shoes2"></td>
                 <td class="text-right align-middle"><div id="trash_shoes2" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes2" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes2"></td>
                 <td class="text-right align-middle" id="total_shoes2"></td>
               </tr>
               <tr class="choice" id="cart_shoes3">
                 <td class="text-left align-middle" id="ref_shoes3"></td>
+                <td class="text-left align-middle" id="dg_shoes3"></td>
                 <td class="text-right align-middle"><div id="trash_shoes3" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes3" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes3"></td>
                 <td class="text-right align-middle" id="total_shoes3"></td>
               </tr>
               <tr class="choice" id="cart_shoes4">
                 <td class="text-left align-middle" id="ref_shoes4"></td>
+                <td class="text-left align-middle" id="dg_shoes4"></td>
                 <td class="text-right align-middle"><div id="trash_shoes4" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes4" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes4"></td>
                 <td class="text-right align-middle" id="total_shoes4"></td>
               </tr>
               <tr class="choice" id="cart_shoes5">
                 <td class="text-left align-middle" id="ref_shoes5"></td>
+                <td class="text-left align-middle" id="dg_shoes5"></td>
                 <td class="text-right align-middle"><div id="trash_shoes5" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes5" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes5"></td>
                 <td class="text-right align-middle" id="total_shoes5"></td>
               </tr>
               <tr class="choice" id="cart_shoes6">
                 <td class="text-left align-middle" id="ref_shoes6"></td>
+                <td class="text-left align-middle" id="dg_shoes6"></td>
                 <td class="text-right align-middle"><div id="trash_shoes6" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes6" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes6"></td>
                 <td class="text-right align-middle" id="total_shoes6"></td>
               </tr>
               <tr class="choice" id="cart_shoes7">
                 <td class="text-left align-middle" id="ref_shoes7"></td>
+                <td class="text-left align-middle" id="dg_shoes7"></td>
                 <td class="text-right align-middle"><div id="trash_shoes7" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes7" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes7"></td>
                 <td class="text-right align-middle" id="total_shoes7"></td>
               </tr>
               <tr class="choice" id="cart_shoes8">
                 <td class="text-left align-middle" id="ref_shoes8"></td>
+                <td class="text-left align-middle" id="dg_shoes8"></td>
                 <td class="text-right align-middle"><div id="trash_shoes8" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes8" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes8"></td>
                 <td class="text-right align-middle" id="total_shoes8"></td>
               </tr>
               <tr class="choice" id="cart_shoes9">
                 <td class="text-left align-middle" id="ref_shoes9"></td>
+                <td class="text-left align-middle" id="dg_shoes9"></td>
                 <td class="text-right align-middle"><div id="trash_shoes9" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes9" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes9"></td>
                 <td class="text-right align-middle" id="total_shoes9"></td>
               </tr>
               <tr class="choice" id="cart_shoes10">
                 <td class="text-left align-middle" id="ref_shoes10"></td>
+                <td class="text-left align-middle" id="dg_shoes10"></td>
                 <td class="text-right align-middle"><div id="trash_shoes10" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes10" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes10"></td>
                 <td class="text-right align-middle" id="total_shoes10"></td>
               </tr>
               <tr class="choice" id="cart_shoes11">
                 <td class="text-left align-middle" id="ref_shoes11"></td>
+                <td class="text-left align-middle" id="dg_shoes11"></td>
                 <td class="text-right align-middle"><div id="trash_shoes11" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes11" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes11"></td>
                 <td class="text-right align-middle" id="total_shoes11"></td>
               </tr>
               <tr class="choice" id="cart_shoes12">
                 <td class="text-left align-middle" id="ref_shoes12"></td>
+                <td class="text-left align-middle" id="dg_shoes12"></td>
                 <td class="text-right align-middle"><div id="trash_shoes12" class="trash"><i class="far fa-trash-alt"></i></div> <input id="qty_shoes12" type="number" class="qty" min="0" max="99" value="0" /></td>
                 <td class="text-right align-middle" id="price_shoes12"></td>
                 <td class="text-right align-middle" id="total_shoes12"></td>

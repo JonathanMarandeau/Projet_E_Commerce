@@ -13,6 +13,14 @@ body {
   font-family: 'Black Ops One', cursive;
 }
 
+/* style info cart*/
+#qty_cart{
+  font-weight: bold;
+}
+.fa-shopping-basket{
+  color : white;
+}
+
 /*CARDS STYLING*/
 .eshopcardstyle {
   text-align: center;
