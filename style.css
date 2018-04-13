@@ -8,6 +8,7 @@ body {
 .footLi{
   font-size: 30px;
   display: inline;
+  margin-left: 55px;
 }
 .footUl{
   text-align: center;
