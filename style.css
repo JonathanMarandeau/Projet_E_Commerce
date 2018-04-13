@@ -4,6 +4,15 @@ body {
   margin-right: 20px;
   background-color: #737f8a;
 }
+/*Footer*/
+.footLi{
+  font-size: 30px;
+  display: inline;
+}
+.footUl{
+  text-align: center;
+}
+
 /*Parallax*/
 /* The image used */
 .container{
