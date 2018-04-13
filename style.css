@@ -88,6 +88,10 @@ body {
   color: darkgrey;
 }
 
+.price {
+  font-weight: bold
+}
+
 /*--------------- Modal--------------- */
 
 #tblGrid{
