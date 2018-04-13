@@ -19,7 +19,7 @@ body {
 .titleContact{
   font-size: 50px;
   text-align: center;
-  color: white;
+  color: #BBB0B4;
 }
 
 /*Parallax*/
@@ -82,8 +82,8 @@ body {
 }
 /*container qui "sommes nous"*/
 .nous {
-  background-color: #284C64;
-  color: #05121B;
+  background-color: #05121B;
+  color: #BBB0B4;
   padding-top: 100px;
   padding-bottom: 100px;
   height: 500px;
