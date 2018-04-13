@@ -440,8 +440,15 @@ $('#btn_shoes12').click(function(){ // bouton shoes12
     $('#update_message').text('Attention le panier n\'est pas à jour');
   });
 
-
-
-
-
+  function addResponsiveClass() {
+    if($(window).height() <=1024) {
+      $('.table').addClass('table-responsive');
+    } else {
+      $('.table').removeClass('table-responsive');
+    }
+  }
+  addResponsiveClass;
+  $(window).resize(function() {
+    addResponsiveClass;
+  })
 }); // FIN DE LA FONCTION DOCUMENT READY
