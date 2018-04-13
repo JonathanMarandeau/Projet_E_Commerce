@@ -29,10 +29,10 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LA BOUTIQUE</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" id="navAll" href="#">Toutes les marques</a>
-            <a class="dropdown-item" id="navAdidas" href="#">Adidas</a>
-            <a class="dropdown-item" id="navNike" href="#">Nike</a>
-            <a class="dropdown-item" id="navPuma" href="#">Puma</a>
+            <a class="dropdown-item" id="navAll" href="#shop">Toutes les marques</a>
+            <a class="dropdown-item" id="navAdidas" href="#shop">Adidas</a>
+            <a class="dropdown-item" id="navNike" href="#shop">Nike</a>
+            <a class="dropdown-item" id="navPuma" href="#shop">Puma</a>
           </div>
         </li>
         <li class="nav-item">
@@ -50,10 +50,10 @@
   </nav> <!-- fin de la navbar -->
 
   <!--Class container pour le parallax-->
-  <div class="container intermédiaire"><!--début container entre image et nous-->
-
+  <div class="container parallax01 text-center align-middle"><!--début container entre image et nous-->
+    <p>SHOES ME and not another :)</p>
   </div>
-<!--Fin container entre image et nous-->
+  <!--Fin container entre image et nous-->
 
   <div class="container nous" id="weAre">
     <h1>Qui sommes nous ?</h1>
@@ -85,7 +85,7 @@
           <div class="col align-self-end"><!-- début du div col -->
           <form> <!-- début du formulaire-->
           <!-- Table responsive avec scroll horizontal en mode portable-->
-          <table class="table" id="tblGrid"> <!-- class à modifier lors du media Query -->
+          <table class="table table-hover" id="tblGrid"> <!-- class à modifier lors du media Query -->
             <thead class="thead-dark" id="tblHead">
               <tr>
                 <th class="text-left align-middle">Référence</th>
@@ -183,7 +183,7 @@
               </tr>
               <!-- fin pour rajouter ici les shoes -->
               <tr>
-                <td class="text-right align-middle" id="update_message"></td>
+                <td colspan ="2" class="text-right align-middle" id="update_message"></td>
                 <td class="text-right align-middle"><input type="button" class="btn btn-secondary btn-sm" id="btn_update" value="Mise à jour" /></td>
                 <td class="text-right align-middle">Total du panier</td>
                 <td class="text-right align-middle" id="total_all"></td>
@@ -209,12 +209,18 @@
 <!-- fin du MODAL ------------------------------------------------------------------------------------->
 
 <!--Class container intermediaire-->
-<div class="container intermédiaire"><!--Class container intermédiaire entre nous et boutique-->
-
+<div class="container parallax01 text-center align-middle"><!--début container entre image et nous-->
 </div>
 <!--Fin containe entre nous et boutique-->
 
-<div class="container boutique"> <!-- début container -->
+<div id="shop" class="container boutique"> <!-- début container -->
+
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <p id="name_boutique">LA BOUTIQUE</p>
+    </div>
+  </div>
+
   <div class="row"> <!-- début du row -->
 
     <div class="col-xs-12 col-sm-6 col-md-3">

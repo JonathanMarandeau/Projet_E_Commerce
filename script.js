@@ -138,19 +138,6 @@ $('#btn_shoes4').click(function(){ // bouton shoes4
   $('#cart_shoes4').show();
 });
 
-$('#btn_shoes4').click(function(){ // bouton shoes4
-  qty_shoes4++;
-  qty_cart = +qty_shoes1 + +qty_shoes2 + +qty_shoes3 + +qty_shoes4 + +qty_shoes5 + +qty_shoes6 + +qty_shoes7 + +qty_shoes8 + +qty_shoes9 + +qty_shoes10 + +qty_shoes11 + +qty_shoes12;
-  total_all = (qty_shoes1*price_shoes1) + (qty_shoes2*price_shoes2) + (qty_shoes3*price_shoes3) + (qty_shoes4*price_shoes4)+ (qty_shoes5*price_shoes5)+ (qty_shoes6*price_shoes6)+ (qty_shoes7*price_shoes7)+ (qty_shoes8*price_shoes8)+ (qty_shoes9*price_shoes9)+ (qty_shoes10*price_shoes10)+ (qty_shoes11*price_shoes11)+ (qty_shoes12*price_shoes12); // fonction provisoire
-  $('#ref_shoes4').text(ref_shoes4);
-  $('#price_shoes4').text(price_shoes4.toFixed(2)+'€');
-  $('#qty_shoes4').val(qty_shoes4);
-  $('#total_shoes4').text((qty_shoes4 * price_shoes4).toFixed(2)+'€');
-  $('#total_all').text(total_all.toFixed(2)+'€');
-  $('#qty_cart').text(qty_cart); // maj du qty du cart lors du clic
-  $('#cart_shoes4').show();
-});
-
 $('#btn_shoes5').click(function(){ // bouton shoes5
   qty_shoes5++;
   qty_cart = +qty_shoes1 + +qty_shoes2 + +qty_shoes3 + +qty_shoes4 + +qty_shoes5 + +qty_shoes6 + +qty_shoes7 + +qty_shoes8 + +qty_shoes9 + +qty_shoes10 + +qty_shoes11 + +qty_shoes12;
@@ -162,19 +149,6 @@ $('#btn_shoes5').click(function(){ // bouton shoes5
   $('#total_all').text(total_all.toFixed(2)+'€');
   $('#qty_cart').text(qty_cart); // maj du qty du cart lors du clic
   $('#cart_shoes5').show();
-});
-
-$('#btn_shoes6').click(function(){ // bouton shoes6
-  qty_shoes4++;
-  qty_cart = +qty_shoes1 + +qty_shoes2 + +qty_shoes3 + +qty_shoes4 + +qty_shoes5 + +qty_shoes6 + +qty_shoes7 + +qty_shoes8 + +qty_shoes9 + +qty_shoes10 + +qty_shoes11 + +qty_shoes12;
-  total_all = (qty_shoes1*price_shoes1) + (qty_shoes2*price_shoes2) + (qty_shoes3*price_shoes3) + (qty_shoes4*price_shoes4)+ (qty_shoes5*price_shoes5)+ (qty_shoes6*price_shoes6)+ (qty_shoes7*price_shoes7)+ (qty_shoes8*price_shoes8)+ (qty_shoes9*price_shoes9)+ (qty_shoes10*price_shoes10)+ (qty_shoes11*price_shoes11)+ (qty_shoes12*price_shoes12); // fonction provisoire
-  $('#ref_shoes6').text(ref_shoes6);
-  $('#price_shoes6').text(price_shoes6.toFixed(2)+'€');
-  $('#qty_shoes6').val(qty_shoes6);
-  $('#total_shoes6').text((qty_shoes6 * price_shoes6).toFixed(2)+'€');
-  $('#total_all').text(total_all.toFixed(2)+'€');
-  $('#qty_cart').text(qty_cart); // maj du qty du cart lors du clic
-  $('#cart_shoes6').show();
 });
 
 $('#btn_shoes6').click(function(){ // bouton shoes6
@@ -250,19 +224,6 @@ $('#btn_shoes11').click(function(){ // bouton shoes11
   $('#price_shoes11').text(price_shoes11.toFixed(2)+'€');
   $('#qty_shoes11').val(qty_shoes11);
   $('#total_shoes11').text((qty_shoes11 * price_shoes11).toFixed(2)+'€');
-  $('#total_all').text(total_all.toFixed(2)+'€');
-  $('#qty_cart').text(qty_cart); // maj du qty du cart lors du clic
-  $('#cart_shoes11').show();
-});
-
-$('#btn_shoes11').click(function(){ // bouton shoes11
-  qty_shoes11++;
-  qty_cart = +qty_shoes1 + +qty_shoes2 + +qty_shoes3 + +qty_shoes4 + +qty_shoes5 + +qty_shoes6 + +qty_shoes7 + +qty_shoes8 + +qty_shoes9 + +qty_shoes10 + +qty_shoes11 + +qty_shoes12;
-  total_all = (qty_shoes1*price_shoes1) + (qty_shoes2*price_shoes2) + (qty_shoes3*price_shoes3) + (qty_shoes4*price_shoes4)+ (qty_shoes5*price_shoes5)+ (qty_shoes6*price_shoes6)+ (qty_shoes7*price_shoes7)+ (qty_shoes8*price_shoes8)+ (qty_shoes9*price_shoes9)+ (qty_shoes10*price_shoes10)+ (qty_shoes11*price_shoes11)+ (qty_shoes12*price_shoes12); // fonction provisoire
-  $('#ref_shoes11').text(ref_shoes11);
-  $('#price_shoes11').text(price_shoes11.toFixed(2)+'€');
-  $('#qty_shoes11').val(qty_shoes11);
-  $('#total_shoes11').text((qty_shoes11 * price_shoes9).toFixed(2)+'€');
   $('#total_all').text(total_all.toFixed(2)+'€');
   $('#qty_cart').text(qty_cart); // maj du qty du cart lors du clic
   $('#cart_shoes11').show();
@@ -449,15 +410,17 @@ $('#btn_shoes12').click(function(){ // bouton shoes12
   });
 
   function addResponsiveClass() {
-    if($(window).height() <=1024) {
+    if($(window).width() <= 1024) {
       $('.table').addClass('table-responsive');
     } else {
       $('.table').removeClass('table-responsive');
     }
   }
-  addResponsiveClass;
+
+  /*addResponsiveClass;
   $(window).resize(function() {
     addResponsiveClass;
     console.log($(window).width());
-  });console.log($(window).width());
+  });console.log($(window).width());*/
+
 }); // FIN DE LA FONCTION DOCUMENT READY

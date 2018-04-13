@@ -2,13 +2,17 @@ body {
   font-family: 'Pavanam', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #737f8a;
+  background-color: #05121B;
 }
 /*Parallax*/
 
 /* The image used */
-.parallax{
+.parallax01{
   background-image: url('images/bg_footwear.jpg');
+  padding-top: 100px;
+  height: 700px;
+  font-size: 3em;
+  color: white;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -58,15 +62,23 @@ body {
   height: auto;
   width: auto;
 }
-
+/*container qui "sommes nous"*/
 .nous {
-  background-color: pink;
+  background-color: #737F8A;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
+  height: 500px;
 }
+/*container boutique*/
 .boutique {
   padding-top: 100px;
 }
+#name_boutique{
+  color : #737F8A;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
 
 /*Icon a coté de ShoesAddicted */
 #ShoesAddictedIcon {
@@ -87,7 +99,7 @@ body {
 /*--------------- Modal--------------- */
 
 #tblGrid{
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: auto;
 }
 .qty{
@@ -99,6 +111,7 @@ body {
 
 #update_message{
   color : orange;
+  font-weight: bold;
 }
 
 .trash{
