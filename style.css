@@ -74,6 +74,12 @@ body {
   padding-bottom: 25px;
 }
 
+.refProd {
+  font-size: small;
+  font-style: italic;
+  color: darkgrey;
+}
+
 /*--------------- Modal--------------- */
 
 #tblGrid{

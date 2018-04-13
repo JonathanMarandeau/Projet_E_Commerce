@@ -6,32 +6,40 @@ $('#navAdidas').click(function() {
   $('.Nike').hide();
   $('.Puma').hide();
   $('.Adidas').show();
-  $('#weAre').hide();
 })
 
 $('#navNike').click(function() {
   $('.Adidas').hide();
   $('.Puma').hide();
   $('.Nike').show();
-  $('#weAre').hide();
 })
 
 $('#navPuma').click(function() {
   $('.Nike').hide();
   $('.Adidas').hide();
   $('.Puma').show();
-  $('#weAre').hide();
 })
 
 $('#navAll').click(function(){
   $('.Nike').show();
   $('.Adidas').show();
   $('.Puma').show();
-  $('#weAre').show();
 })
 
 /*---------------- GESTION DU PANIER ----------------------------*/
-
+// VAR DES DESIGNATIONS----------------------------------
+var dg_shoes1= 'Nike Air Jordan 1 Retro'
+var dg_shoes2= 'Nike Air Jordan 1 High Zip'
+var dg_shoes3= 'Nike Air Jordan 1st Class'
+var dg_shoes4= 'Nike Air Jordan 1 OG'
+var dg_shoes5= 'Adidas Superstar'
+var dg_shoes6= 'Adidas Pharrell Williams'
+var dg_shoes7= 'Adidas Stan Smith'
+var dg_shoes8= 'Adidas Gazelle'
+var dg_shoes9= 'Puma Tsugi EvoKNIT'
+var dg_shoes10= 'Puma Suede'
+var dg_shoes11= 'Puma Suede Classic'
+var dg_shoes12= 'Puma Suede'
 //  VAR DES REFERENCES DES SHOES  -------------------------------------
 var ref_shoes1 = 'NK666'
 var ref_shoes2 = 'NK690'
@@ -450,5 +458,6 @@ $('#btn_shoes12').click(function(){ // bouton shoes12
   addResponsiveClass;
   $(window).resize(function() {
     addResponsiveClass;
-  })
+    console.log($(window).width());
+  });console.log($(window).width());
 }); // FIN DE LA FONCTION DOCUMENT READY
