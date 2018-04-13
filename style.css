@@ -5,8 +5,9 @@ body {
   background-color: #737f8a;
 }
 /*Parallax*/
+
 /* The image used */
-.container{
+.parallax{
   background-image: url('images/bg_footwear.jpg');
 
   /* Create the parallax scrolling effect */
