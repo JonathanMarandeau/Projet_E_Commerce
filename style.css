@@ -5,6 +5,9 @@ body {
   background-color: #737f8a;
 }
 /*Footer*/
+#contact {
+  margin-top: 30px;
+}
 .footLi{
   font-size: 30px;
   display: inline;
@@ -12,6 +15,11 @@ body {
 }
 .footUl{
   text-align: center;
+}
+.titleContact{
+  font-size: 50px;
+  text-align: center;
+  color: white;
 }
 
 /*Parallax*/
