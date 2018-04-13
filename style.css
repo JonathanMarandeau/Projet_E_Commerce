@@ -4,6 +4,18 @@ body {
   margin-right: 20px;
   background-color: #737f8a;
 }
+/*Parallax*/
+/* The image used */
+.container{
+  background-image: url('images/bg_footwear.jpg');
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*css Collapse*/
 .detail{
   font-style: italic;
